@@ -1,0 +1,23 @@
+<p>todos works!</p>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Serial #</th>
+            <th scope="col">Task</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let todo of todos">
+            <td scope="row">{{todo.sno}}</td>
+            <td>{{todo.task}}</td>
+            <td>{{todo.status}}</td>
+            <td><button>delete</button></td>
+          </tr>  
+        </tbody>
+      </table>
+    
+</div>
